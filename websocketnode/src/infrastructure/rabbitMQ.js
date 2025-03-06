@@ -9,7 +9,7 @@ async function connect() {
         channel = await connection.createChannel();
     } catch (error) {
         console.error('Error al conectar a RabbitMQ:', error);
-        throw error; // Lanza el error para que sea manejado en el servidor
+        throw error;
     }
 }
 
